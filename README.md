@@ -39,6 +39,12 @@ in the project for easy setup:
     $ make up
     # ...or docker-compose up
 
+Then go to http://127.0.0.1:8000/ for the web client.
+
+- Web client: `http://127.0.0.1:8000/`
+- REST API: `http://127.0.0.1:4567`
+- Core service: `http://127.0.0.1:8080/`
+
 ## More
 
 Included are 2 preview for the web frontend and Postman collection export for easily exploring the REST API.
