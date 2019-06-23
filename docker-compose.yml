@@ -1,0 +1,19 @@
+version: '2'
+services:
+  server:
+    build: server
+    image: accounting-server
+    ports:
+     - "8080:8080"
+  api:
+    build: api
+    image: accounting-api
+    ports:
+     - "4567:4567"
+    environment:
+        - CLIENT_HOST=server
+  client:
+    build: client
+    image: accounting-api-client
+    ports:
+     - "8000:8000"

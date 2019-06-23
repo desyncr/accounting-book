@@ -1,0 +1,9 @@
+[submodule "server"]
+	path = server
+	url = git@github.com:desyncr/accounting-book-server.git
+[submodule "client"]
+	path = client
+	url = git@github.com:desyncr/accounting-book-client.git
+[submodule "api"]
+	path = api
+	url = git@github.com:desyncr/accounting-book-api.git

@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "02fbda09-bff1-49ee-b448-bd7d141e45d0",
+		"name": "Accounting Book",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4567/accounts/89618263481836485756",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4567",
+					"path": [
+						"accounts",
+						"89618263481836485756"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4567/accounts/89618263481836485756/transactions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4567",
+					"path": [
+						"accounts",
+						"89618263481836485756",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4567/accounts/89618263481836485756/transactions/00000005044306110431",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4567",
+					"path": [
+						"accounts",
+						"89618263481836485756",
+						"transactions",
+						"00000005044306110431"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Debit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"type\":\"debit\",\"amount\":\"700\"}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4567/accounts/89618263481836485756/transactions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4567",
+					"path": [
+						"accounts",
+						"89618263481836485756",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Credit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"type\":\"credit\",\"amount\":\"700\"}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4567/accounts/89618263481836485756/transactions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4567",
+					"path": [
+						"accounts",
+						"89618263481836485756",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
