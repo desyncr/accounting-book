@@ -17,6 +17,8 @@ The core accouting component was built with ansi C and provides a multi-threaded
 server listening on port 8080 (default), and provides a not-so-simple custom text protocol
 for request and responses.
 
+See protocol instructions [here](https://github.com/desyncr/accounting-book-server/tree/89227af058b0bffcff8792d50d299bca70f52638#protocol).
+
 ### API
 
 The REST API component is a thin layer built with Sinatra micro webframework. It does support all
