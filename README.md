@@ -45,6 +45,19 @@ Then go to http://127.0.0.1:8000/ for the web client.
 - REST API: `http://127.0.0.1:4567`
 - Core service: `http://127.0.0.1:8080/`
 
+## Sample transactions
+
+In order to fill up the storage with sample transactions you can use the following command:
+
+    $ cd path-to-project
+    $ make create-transactions
+
+Note: The server must be running when launching the previous command.
+
+Then go to the following account dashboard:
+
+    http://127.0.0.1:8000/?account=89618263481836485756
+
 ## More
 
 Included are 2 preview for the web frontend and Postman collection export for easily exploring the REST API.
