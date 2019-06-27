@@ -13,4 +13,4 @@ services:
   client:
     image: desyncr/accounting-api-client
     ports:
-     - "8000:8000"
+     - "8000:80"

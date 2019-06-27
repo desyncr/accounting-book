@@ -7,7 +7,7 @@ The architecture is a multi-tiered, client-server and state-less:
 
 - Simple API REST for the web-clients
 - Custom, text based socket server for the core accounting component (accounts, transactions)
-- Very basic frontend client
+- Angular 8 frontend client with custom components
 
 ## Components
 
@@ -30,7 +30,7 @@ retrieve transaction list and transaction information by id.
 The web client was built with Angular 8 and uses a couple of custom components (account,
 transaction) as well as a thin API client.
 
-![preview](https://github.com/desyncr/accounting-book/blob/master/preview1.png?raw=true);
+![preview](https://github.com/desyncr/accounting-book/blob/master/preview2.png?raw=true)
 
 ## Usage
 
@@ -58,7 +58,7 @@ Note: The server must be running when launching the previous command.
 
 Then go to the following account dashboard:
 
-    http://127.0.0.1:8000/?account=89618263481836485756
+    http://127.0.0.1:8000/
 
 ## More
 
