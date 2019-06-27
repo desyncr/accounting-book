@@ -27,8 +27,10 @@ retrieve transaction list and transaction information by id.
 
 ### Client
 
-The web client is a base HTML/JS project which connect to the API server and renders transactions
-for a given account (supports query string ?account=<account_number>).
+The web client was built with Angular 8 and uses a couple of custom components (account,
+transaction) as well as a thin API client.
+
+![preview](https://github.com/desyncr/accounting-book/blob/master/preview1.png?raw=true);
 
 ## Usage
 
